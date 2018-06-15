@@ -1,0 +1,24 @@
+{
+  "name": "speller",
+  "description": "A BASIC spellchecker",
+  "repository": "https://github.com/gh2k/basic-speller",
+  "license": " GPL-3.0",
+  "private": true,
+  "scripts": {
+    "test": "npm run lint && npm run unit",
+    "unit": "mocha tests --recursive",
+    "lint": "jshint --exclude ./node_modules .",
+    "debug": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "jshint": "^2.9.5",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
